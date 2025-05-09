@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80vh;
+}
+
+.grid > div {
+  display: flex;
+}
+.left {
+  align-items: flex-start;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+.center {
+  text-align: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 2em;
+}
