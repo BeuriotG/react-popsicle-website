@@ -1,7 +1,7 @@
 import styles from "./prestations.module.css";
 import Image from "next/image";
-import Prestation from "@/public/gallery/Prestations1.webp";
-import Prestation2 from "@/public/gallery/Prestations-Noel.webp";
+import Prestation from "@/public/prestations/Prestations1.webp";
+import Prestation2 from "@/public/prestations/Prestations-Noel.webp";
 export default function Prestations() {
   return (
     <div className={styles.grid}>
