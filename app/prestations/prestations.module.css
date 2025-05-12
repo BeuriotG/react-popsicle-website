@@ -19,5 +19,14 @@
   text-align: center;
   flex-direction: column;
   gap: 1em;
-  padding: 1em 2em;
+  padding: 1em 0;
+}
+
+.center h2 {
+  font-size: 1.5em;
+}
+
+.center p {
+  font-size: 1.2em;
+  padding: 0 3em;
 }

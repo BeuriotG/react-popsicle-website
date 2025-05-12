@@ -12,7 +12,6 @@ export default function Button() {
     setCopied(true);
     setTimeout(() => setCopied(false), 3000);
   };
-  console.log(copied);
   return (
     <>
       {copied ? (

@@ -19,6 +19,14 @@
   margin-top: 10%;
 }
 
+.contactContainer h2 {
+  font-size: 1.5em;
+}
+
+.contactContainer p {
+  font-size: 1.2em;
+}
+
 .list {
   background: antiquewhite;
   color: black;

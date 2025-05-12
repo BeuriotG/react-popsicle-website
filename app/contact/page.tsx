@@ -27,7 +27,7 @@ export default function ContactPage() {
         >
           Youtube
         </a>
-        <h2>NOS HONORAIRES</h2>
+        <h2 className="cinzelDecorative">NOS HONORAIRES</h2>
         <p>Contactez-nous pour établir un devis de prestation sur mesure.</p>
       </div>
     </div>

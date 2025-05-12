@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 75vh;
+  margin: 1em;
+  gap: 1em;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 1em 0;
+
+  background: antiquewhite;
+  color: black;
+
+  text-align: center;
+  height: 100%;
+}
+
+.carousel h2 {
+  font-size: 1.5em;
+}
+
+.carousel p {
+  padding: 0 5em;
+}
