@@ -1,3 +1,4 @@
+"use client";
 import Carousel from "./components/carousel/carousel";
 import Image from "next/image";
 import styles from "./home.module.css";

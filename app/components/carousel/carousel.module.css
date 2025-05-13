@@ -1,0 +1,19 @@
+.embla {
+  overflow: hidden;
+  width: 100%; /* ou une largeur plus petite si tu veux */
+  max-width: 400px; /* ← ajuste comme tu veux */
+  margin: 0 auto;
+}
+
+.embla__container {
+  display: flex;
+  gap: 0;
+}
+
+.embla__slide {
+  flex: 0 0 100%; /* ← chaque slide prend 80% de la largeur du conteneur */
+  margin-right: 1em; /* ou padding si tu veux de l’espace */
+  position: relative;
+
+  aspect-ratio: 1;
+}
