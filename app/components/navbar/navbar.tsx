@@ -1,8 +1,40 @@
+"use client";
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "@/public/logo/Black and White Minimalist Professional Initial Logo 3.png";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 900) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const checkSize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
+    if (window.innerWidth > 900) {
+      setIsOpen(false);
+    }
+
+    checkSize();
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
+  const openMenu = () => setIsOpen(!isOpen);
+
   return (
     <div className={styles.navbar}>
       <div>{/* inner spacing */}</div>
@@ -17,7 +49,9 @@ export default function NavBar() {
       <h1 className={styles.h1}>
         POPSICLE <span className="font-cinzel">SISTERS</span>
       </h1>
-      <div className={styles.navbar_links}>
+      <div
+        className={isOpen ? styles.navbar_links_mobile : styles.navbar_links}
+      >
         <Link className="font-cinzel underline" href={`/`}>
           ACCUEIL
         </Link>
@@ -31,6 +65,11 @@ export default function NavBar() {
           CONTACT
         </Link>
       </div>
+      {isMobile && (
+        <button onClick={openMenu} className={styles.menu}>
+          <GiHamburgerMenu />
+        </button>
+      )}
     </div>
   );
 }

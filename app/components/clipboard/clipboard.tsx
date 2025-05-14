@@ -1,13 +1,12 @@
 "use client";
-import styles from "./clipboard.module.css";
+import { useState } from "react";
 import { LuClipboard } from "react-icons/lu";
 import { LuClipboardCheck } from "react-icons/lu";
-import { useState } from "react";
+import styles from "./clipboard.module.css";
 
 export default function Button() {
   const [copied, setCopied] = useState(false);
   const copyToClipBoard = () => {
-    console.log("copyToClipBoard");
     navigator.clipboard.writeText("popsisclesisterstrio@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 3000);

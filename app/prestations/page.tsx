@@ -1,18 +1,17 @@
-import styles from "./prestations.module.css";
 import Image from "next/image";
 import Prestation from "@/public/prestations/Prestations1.webp";
 import Prestation2 from "@/public/prestations/Prestations-Noel.webp";
+import styles from "./prestations.module.css";
 export default function Prestations() {
   return (
     <div className={styles.grid}>
       <div className={styles.left}>
-        <div className={styles.rounded}>
-          <Image
-            alt="img"
-            src={Prestation}
-            style={{ position: "relative" }}
-          ></Image>
-        </div>
+        <Image
+          alt="img"
+          src={Prestation}
+          style={{ objectFit: "contain", height: "100%" }}
+          placeholder="blur"
+        ></Image>
       </div>
       <div className={styles.center}>
         <h2 className="cinzelDecorative">CE QUE NOUS PROPOSONS</h2>
@@ -32,9 +31,12 @@ export default function Prestations() {
         </p>
       </div>
       <div className={styles.right}>
-        <div className={styles.rounded}>
-          <Image alt="img" src={Prestation2}></Image>
-        </div>
+        <Image
+          alt="img"
+          src={Prestation2}
+          style={{ objectFit: "contain", height: "100%" }}
+          placeholder="blur"
+        ></Image>
       </div>
     </div>
   );

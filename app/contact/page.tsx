@@ -1,13 +1,13 @@
-import styles from "./contact.module.css";
-import Contact from "@/public/contact/Contact.webp";
 import Image from "next/image";
+import Contact from "@/public/contact/Contact.webp";
 import Button from "@/app/components/clipboard/clipboard";
+import styles from "./contact.module.css";
 
 export default function ContactPage() {
   return (
     <div className={styles.contactPage}>
       <div className={styles.imgContainer}>
-        <Image src={Contact} width={300} alt="img" />
+        <Image src={Contact} width={300} alt="img" placeholder="blur" />
       </div>
       <div className={styles.contactContainer}>
         <Button />

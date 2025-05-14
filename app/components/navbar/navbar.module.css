@@ -23,3 +23,59 @@
   justify-content: center;
   font-size: 3em;
 }
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .navbar img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    width: 40px;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+
+  .navbar_links_mobile {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 4.4em;
+    right: 0;
+    gap: 0;
+    width: 25vw;
+    background: antiquewhite;
+    border: solid 1px black;
+  }
+
+  .navbar_links_mobile a {
+    text-align: center;
+
+    font-size: 0.9em;
+    height: 30px;
+    border: solid 1px black;
+  }
+
+  .h1 {
+    font-size: 2em;
+  }
+}

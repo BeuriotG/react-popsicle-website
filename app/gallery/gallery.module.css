@@ -5,3 +5,28 @@
   gap: 2em;
   margin: 1em;
 }
+
+.col1 {
+  grid-column: span 1;
+}
+
+.col2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-items: center;
+  }
+
+  .col1,
+  .col2 {
+    grid-column: span 1 !important;
+  }
+
+  .grid img {
+    max-height: 400px;
+  }
+}

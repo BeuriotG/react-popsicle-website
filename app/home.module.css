@@ -6,6 +6,10 @@
   gap: 1em;
 }
 
+.container img {
+  min-height: 300px;
+}
+
 .carousel {
   display: flex;
   flex-direction: column;
@@ -25,5 +29,21 @@
 }
 
 .carousel p {
+  font-size: 1.2em;
   padding: 0 5em;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-auto-flow: row;
+    grid-template-columns: none;
+  }
+  .carousel h2 {
+    font-size: 1em;
+  }
+
+  .carousel p {
+    font-size: 0.8em;
+    padding: 0 1em;
+  }
 }

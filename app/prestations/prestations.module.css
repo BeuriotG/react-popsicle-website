@@ -30,3 +30,26 @@
   font-size: 1.2em;
   padding: 0 3em;
 }
+
+@media (max-width: 900px) {
+  .grid {
+    grid-auto-flow: row;
+    grid-template-columns: none;
+  }
+
+  .center {
+    gap: 0.5em;
+  }
+  .center h2 {
+    font-size: 1em;
+  }
+
+  .center p {
+    font-size: 0.8em;
+    padding: 0 1em;
+  }
+
+  .grid img {
+    max-height: 300px;
+  }
+}
