@@ -1,16 +1,17 @@
 import Image from "next/image";
-import Prestation from "@/public/prestations/Prestations1.webp";
-import Prestation2 from "@/public/prestations/Prestations-Noel.webp";
+import ImgPrestation from "@/public/prestations/Prestations1.webp";
+import ImgPrestation2 from "@/public/prestations/Prestations-Noel.webp";
 import styles from "./prestations.module.css";
 export default function Prestations() {
   return (
     <div className={styles.grid}>
       <div className={styles.left}>
         <Image
-          alt="img"
-          src={Prestation}
+          alt="Le trio en intérieur"
+          src={ImgPrestation}
           style={{ objectFit: "contain", height: "100%" }}
           placeholder="blur"
+          quality={80}
         ></Image>
       </div>
       <div className={styles.center}>
@@ -20,7 +21,7 @@ export default function Prestations() {
           Nous proposons des concerts et animations musicales (petits sets
           musicaux, happenings,...) pour vos événements : festivals, mariages,
           séminaires, et célébrations en tout genre. Nos prestations se font sur
-          bande-son ou bien accompagnées de musiciens.",
+          bande-son ou bien accompagnées de musiciens.
         </p>
         <br />
         <h2 className="cinzelDecorative">SAISON DE NOËL</h2>
@@ -32,10 +33,11 @@ export default function Prestations() {
       </div>
       <div className={styles.right}>
         <Image
-          alt="img"
-          src={Prestation2}
+          alt="Le trio version Noël"
+          src={ImgPrestation2}
           style={{ objectFit: "contain", height: "100%" }}
           placeholder="blur"
+          quality={80}
         ></Image>
       </div>
     </div>

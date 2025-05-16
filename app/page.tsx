@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Carousel from "./components/carousel/carousel";
 import ImgAcceuil from "@/public/home/trio_accueil.webp";
@@ -9,8 +8,9 @@ export default function Home() {
     <div className={styles.container}>
       <Image
         src={ImgAcceuil}
-        alt="img"
+        alt="Le trio pose en intérieur autour d'ubn amplificateur d'époque"
         style={{ objectFit: "contain", height: "100%" }}
+        quality={80}
         placeholder="blur"
       />
       <div className={styles.carousel}>

@@ -1,3 +1,4 @@
+"use client";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import styles from "./carousel.module.css";
@@ -17,9 +18,10 @@ export default function EmblaCarousel() {
           <Link href={"/prestations"}>
             <Image
               src={ImgCarouselPresta}
-              alt=""
+              alt="Le trio en intérieur, lien vers la page de prestation"
               fill
               style={{ objectFit: "cover" }}
+              quality={80}
             />
           </Link>
         </div>
@@ -27,9 +29,10 @@ export default function EmblaCarousel() {
           <Link href={"/gallery"}>
             <Image
               src={ImgCarouselGallery}
-              alt=""
+              alt="Le trio devant un château, lien vers la page de galerie"
               fill
               style={{ objectFit: "cover" }}
+              quality={80}
             />
           </Link>
         </div>
@@ -37,9 +40,10 @@ export default function EmblaCarousel() {
           <Link href={"/contact"}>
             <Image
               src={ImgCarouselContact}
-              alt=""
+              alt="Gigi au téléphone, lien vers la page de contact"
               fill
               style={{ objectFit: "cover" }}
+              quality={80}
             />
           </Link>
         </div>
