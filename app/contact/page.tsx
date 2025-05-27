@@ -6,15 +6,13 @@ import styles from "./contact.module.css";
 export default function ContactPage() {
   return (
     <div className={styles.contactPage}>
-      <div className={styles.imgContainer}>
-        <Image
-          src={ImgContact}
-          width={300}
-          alt="Betty tient un téléphone"
-          placeholder="blur"
-          quality={80}
-        />
-      </div>
+      <Image
+        src={ImgContact}
+        alt="Betty tient un téléphone"
+        placeholder="blur"
+        quality={80}
+      />
+
       <div className={styles.contactContainer}>
         <Button />
         <a

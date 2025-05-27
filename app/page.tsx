@@ -8,11 +8,12 @@ export default function Home() {
     <div className={styles.container}>
       <Image
         src={ImgAcceuil}
-        alt="Le trio pose en intérieur autour d'ubn amplificateur d'époque"
-        style={{ objectFit: "contain", height: "100%" }}
+        alt="Le trio pose en intérieur autour d'un amplificateur d'époque"
         quality={80}
         placeholder="blur"
+        style={{ objectFit: "contain" }}
       />
+
       <div className={styles.carousel}>
         <h2 className="cinzelDecorative">QUI SOMMES NOUS?</h2>
         <p>

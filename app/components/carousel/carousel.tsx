@@ -20,7 +20,6 @@ export default function EmblaCarousel() {
               src={ImgCarouselPresta}
               alt="Le trio en intérieur, lien vers la page de prestation"
               fill
-              style={{ objectFit: "cover" }}
               quality={80}
             />
           </Link>
@@ -31,7 +30,6 @@ export default function EmblaCarousel() {
               src={ImgCarouselGallery}
               alt="Le trio devant un château, lien vers la page de galerie"
               fill
-              style={{ objectFit: "cover" }}
               quality={80}
             />
           </Link>
@@ -42,7 +40,6 @@ export default function EmblaCarousel() {
               src={ImgCarouselContact}
               alt="Gigi au téléphone, lien vers la page de contact"
               fill
-              style={{ objectFit: "cover" }}
               quality={80}
             />
           </Link>

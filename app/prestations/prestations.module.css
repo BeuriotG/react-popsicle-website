@@ -2,23 +2,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 80vh;
+  margin: 1em;
 }
 
-.grid > div {
-  display: flex;
-}
 .left {
-  align-items: flex-start;
+  align-self: start;
 }
 
 .right {
-  align-items: flex-end;
+  align-self: end;
 }
 
 .center {
   text-align: center;
-  flex-direction: column;
-  gap: 1em;
   padding: 1em 0;
 }
 

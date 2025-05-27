@@ -1,13 +1,18 @@
 .contactPage {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60vh;
   justify-content: center;
+  margin: 1em;
 }
 
-.imgContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contactPage img {
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
 }
 
 .contactContainer {
