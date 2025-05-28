@@ -19,8 +19,12 @@ export default function Button() {
         <p>Copier l&apos;email en cliquant le boutton du dessous</p>
       )}
       <button className={styles.button} onClick={copyToClipBoard}>
+        {copied ? (
+          <LuClipboardCheck />
+        ) : (
+          <LuClipboard style={{ height: "1.4em", width: "1.4em" }} />
+        )}
         popsiclesisterstrio@gmail.com
-        {copied ? <LuClipboardCheck /> : <LuClipboard />}
       </button>
     </>
   );

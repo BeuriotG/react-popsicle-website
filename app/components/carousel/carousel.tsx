@@ -12,7 +12,7 @@ export default function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
-    <div className={styles.embla} ref={emblaRef}>
+    <article className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
         <div className={styles.embla__slide}>
           <Link href={"/prestations"}>
@@ -45,6 +45,6 @@ export default function EmblaCarousel() {
           </Link>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

@@ -33,10 +33,13 @@
 }
 
 .list {
-  background: antiquewhite;
+  background: #e9e1af;
   color: black;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4em;
   border-radius: 5px;
+  padding-top: 0.2em;
   width: 250px;
   height: 30px;
 }

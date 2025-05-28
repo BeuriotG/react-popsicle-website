@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   height: 80vh;
   margin: 1em;
 }
@@ -27,6 +28,13 @@
   padding: 0 3em;
 }
 
+.video {
+  width: 85vw;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  grid-column: 1 / 4;
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-auto-flow: row;
@@ -47,5 +55,9 @@
 
   .grid img {
     max-height: 300px;
+  }
+
+  .video {
+    grid-column: 1;
   }
 }

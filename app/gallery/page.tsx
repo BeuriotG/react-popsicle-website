@@ -47,7 +47,7 @@ export default function Gallery() {
     },
   ];
   return (
-    <div className={styles.grid}>
+    <article className={styles.grid}>
       {images.map((img, index) => (
         <div key={index} className={styles[`col${img.col}`] || styles.col1}>
           <Image
@@ -59,6 +59,6 @@ export default function Gallery() {
           />
         </div>
       ))}
-    </div>
+    </article>
   );
 }
