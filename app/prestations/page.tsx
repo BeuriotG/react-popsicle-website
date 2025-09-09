@@ -49,13 +49,15 @@ export default function Prestations() {
         </div>
         <iframe
           className={styles.video}
-          src="https://www.youtube.com/embed/LO93XQYNQyQ"
-          title="Live teaser - Popsicle Sisters"
+          src="https://www.youtube.com/embed/8MeUDONDnE4"
+          title="Les Popsicle Sisters - Teaser 2025"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           style={{ margin: "4em auto" }}
-        ></iframe>
+        >
+        </iframe>
+
       </article>
     </>
   );
