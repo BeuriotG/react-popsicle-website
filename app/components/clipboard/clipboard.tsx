@@ -7,7 +7,7 @@ import styles from "./clipboard.module.css";
 export default function Button() {
   const [copied, setCopied] = useState(false);
   const copyToClipBoard = () => {
-    navigator.clipboard.writeText("popsisclesisterstrio@gmail.com");
+    navigator.clipboard.writeText("popsiclesisterstrio@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 3000);
   };
