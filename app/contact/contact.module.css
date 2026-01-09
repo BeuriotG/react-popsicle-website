@@ -52,6 +52,8 @@
 @media (max-width: 900px) {
   .contactPage {
     grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+    grid-auto-rows: auto;
   }
   .contactContainer h2 {
     font-size: 1em;

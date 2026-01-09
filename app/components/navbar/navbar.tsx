@@ -59,25 +59,33 @@ export default function NavBar() {
         <Link className="font-cinzel underline" href={`/prestations`}>
           PRESTATIONS
         </Link>
-        <div
-          onMouseEnter={() => setMouseOver(true)}
-          onMouseLeave={() => setMouseOver(false)}
-        >
-          <span>
+        {isMobile && (
+          <Link className="font-cinzel underline" href={`/gallery?tab=photos`}>
+            GALERIE
+          </Link>
+        )}
+        {!isMobile && (
+          <div
+            className={
+              isOpen ? styles.navbar_links_mobile : styles.navbar_links
+            }
+            onMouseEnter={() => setMouseOver(true)}
+            onMouseLeave={() => setMouseOver(false)}
+          >
             <Link
               className="font-cinzel underline"
               href={`/gallery?tab=photos`}
             >
               GALERIE
             </Link>
-          </span>
-          {mouseOver && (
-            <div className={styles.dropdown}>
-              <Link href={`/gallery?tab=photos`}>Photos</Link>
-              <Link href={`/gallery?tab=videos`}>Videos</Link>
-            </div>
-          )}
-        </div>
+            {mouseOver && (
+              <div className={styles.dropdown}>
+                <Link href={`/gallery?tab=photos`}>Photos</Link>
+                <Link href={`/gallery?tab=videos`}>Videos</Link>
+              </div>
+            )}
+          </div>
+        )}
         <Link className="font-cinzel underline" href={`/contact`}>
           CONTACT
         </Link>
