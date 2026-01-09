@@ -8,15 +8,21 @@
 
 .left {
   align-self: start;
+  padding: 2em;
 }
 
 .right {
   align-self: end;
+  padding: 2em;
 }
 
 .center {
   text-align: center;
-  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 5em;
+  gap: 2em;
 }
 
 .center h2 {
@@ -26,13 +32,6 @@
 .center p {
   font-size: 1.2em;
   padding: 0 3em;
-}
-
-.video {
-  width: 85vw;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  grid-column: 1 / 4;
 }
 
 @media (max-width: 900px) {

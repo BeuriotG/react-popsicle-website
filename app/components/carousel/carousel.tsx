@@ -19,6 +19,7 @@ export default function EmblaCarousel() {
             <Image
               src={ImgCarouselPresta}
               alt="Le trio en intérieur, lien vers la page de prestation"
+              sizes="auto"
               fill
               quality={80}
             />
@@ -29,6 +30,7 @@ export default function EmblaCarousel() {
             <Image
               src={ImgCarouselGallery}
               alt="Le trio devant un château, lien vers la page de galerie"
+              sizes="auto"
               fill
               quality={80}
             />
@@ -39,6 +41,7 @@ export default function EmblaCarousel() {
             <Image
               src={ImgCarouselContact}
               alt="Gigi au téléphone, lien vers la page de contact"
+              sizes="auto"
               fill
               quality={80}
             />

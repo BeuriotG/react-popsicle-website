@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [mouseOver, setMouseOver] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -58,9 +59,25 @@ export default function NavBar() {
         <Link className="font-cinzel underline" href={`/prestations`}>
           PRESTATIONS
         </Link>
-        <Link className="font-cinzel underline" href={`/gallery`}>
-          GALERIE
-        </Link>
+        <div
+          onMouseEnter={() => setMouseOver(true)}
+          onMouseLeave={() => setMouseOver(false)}
+        >
+          <span>
+            <Link
+              className="font-cinzel underline"
+              href={`/gallery?tab=photos`}
+            >
+              GALERIE
+            </Link>
+          </span>
+          {mouseOver && (
+            <div className={styles.dropdown}>
+              <Link href={`/gallery?tab=photos`}>Photos</Link>
+              <Link href={`/gallery?tab=videos`}>Videos</Link>
+            </div>
+          )}
+        </div>
         <Link className="font-cinzel underline" href={`/contact`}>
           CONTACT
         </Link>
