@@ -8,10 +8,17 @@ import ImgGallery5 from "@/public/gallery/Galerie5.webp";
 import ImgGallery6 from "@/public/gallery/Galerie6.webp";
 import ImgGallery7 from "@/public/gallery/Galerie7.webp";
 import styles from "./gallery.module.css";
-import { useState, useEffect } from "react";
+import { useState, Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function Gallery() {
+export default function GalleryPage() {
+  return (
+    <Suspense>
+      <Gallery />
+    </Suspense>
+  );
+}
+function Gallery() {
   const searchParams = useSearchParams();
 
   const [photo, setPhoto] = useState(true);
