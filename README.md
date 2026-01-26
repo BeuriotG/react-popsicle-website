@@ -53,4 +53,9 @@ https://www.popsiclesisters.com/
 
 Below are a few screenshots showcasing different pages of the website and its visual identity.
 
-(Screenshots coming here)
+![Homepage](assets/screenshots/pop_home.png)
+![Prestations](assets/screenshots/pop_prestattions.png)
+![Photos](assets/screenshots/pop_photos.png)
+![Videos](assets/screenshots/pop_videos.png)
+![Contact](assets/screenshots/pop_contact.png)
+
